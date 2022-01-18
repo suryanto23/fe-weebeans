@@ -5,12 +5,12 @@ import CartItem from '../components/CartItem';
 
 function CartPage(props) {
     
-    const cart = localStorage.getItem("weebeans-cart") || 0;
     const [data, setData] = useState([])
     
     useEffect(() => {
-        setData(JSON.parse(cart))
-    }, [])
+        const cart = localStorage.getItem("weebeans-cart") || [];
+        if (cart.length > 0) setData(JSON.parse(cart))
+    }, [data])
 
     if(data.length > 0){
         function deleteItem(idx){
