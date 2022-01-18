@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card, Button, Col} from 'react-bootstrap'
+import {Button, Col} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 
 
@@ -16,7 +16,7 @@ function ProductItem(props) {
         <Col className='my-4' xs={6} md={3}>
             <Link to={props.id} className='cst-product-item d-flex flex-column align-items-center'>
             <div className='cst-product-image-frame'>
-                <img className='cst-product-image' src={props.image}   />
+                <img className='cst-product-image' src={props.image} alt={props.name}   />
             </div>
             <Col xs={12}>
                 <h5 className='text-center text-capitalize fw-bold my-3'>

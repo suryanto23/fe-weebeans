@@ -1,6 +1,5 @@
 import React , {useState, useEffect} from 'react'
-import {Container, Button} from 'react-bootstrap';
-import {Link} from 'react-router-dom'
+import {Container} from 'react-bootstrap';
 import CartEmpty from '../components/CartEmpty';
 import CartItem from '../components/CartItem';
 
