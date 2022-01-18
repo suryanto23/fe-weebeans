@@ -7,7 +7,7 @@ import Logo from '../assets/logo/weebeans.png'
 function AboutUsBanner() {
     return (
         <div className='cst-aboutus-banner d-flex flex-md-row'>
-            <img className='cst-aboutus-clip' src={Clip} sec="clip" />
+            <img className='cst-aboutus-clip' src={Clip} alt="clip" />
             <div className='d-flex flex-column-reverse  flex-md-row justify-content-around'>
                 <div className='d-flex flex-column justify-content-center'>
                     <Row className='text-center text-md-start d-flex flex-column mx-2 mb-5'>

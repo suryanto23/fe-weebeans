@@ -13,7 +13,7 @@ function Navigation() {
         <Container>
           <Navbar.Brand className='cst-emblem-frame me-5'>
             <Link to="/">
-              <img src={Emblem} className='cst-emblem' />
+              <img src={Emblem} className='cst-emblem' alt="emblem" />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className='' />
