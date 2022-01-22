@@ -10,7 +10,7 @@ function CartPage(props) {
     useEffect(() => {
         const cart = localStorage.getItem("weebeans-cart") || [];
         if (cart.length > 0) setData(JSON.parse(cart))
-    }, [data])
+    }, [setData])
 
     if(data.length > 0){
         function deleteItem(idx){
